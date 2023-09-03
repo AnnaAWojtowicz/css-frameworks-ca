@@ -1,1 +1,397 @@
+// GoogleFonts
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
 
+//variables:
+$font-titles: "Advent Pro", sans-serif;
+$font-main: "Kanit", sans-serif;
+$color-primary: #433520;
+$color-primary-light: #695433;
+$color-shadow: #d9a406;
+$color-secondary: #025955;
+$color-tertiary: #00917C;
+$color-font: #FDE8CD;
+
+
+body,
+html {
+    height: 100%;
+
+}
+
+body {
+    font-family: $font-main;
+    background-color: $color-primary !important;
+    color: $color-primary;
+
+    .text-center {
+        display: flex;
+        align-items: center;
+        /* padding-top: 40px; */
+        padding-bottom: 40px;
+        background-color: $color-primary;
+    }
+}
+
+header {
+    .container {
+        justify-content: space-between !important;
+    }
+}
+
+
+.modal {
+    --bs-modal-bg: #695433;
+}
+
+.modal-dialog {
+    border: 1px solid $color-font;
+    border-radius: 0.5rem;
+    ;
+}
+
+.modal-header {
+    border-color: $color-font;
+}
+
+.p-3 {
+    padding: 1.5rem 1rem !important;
+}
+
+
+.btn-close {
+    color: $color-font;
+}
+
+
+.modal-footer {
+    border-color: $color-font;
+    justify-content: center;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+}
+
+
+h1 {
+    color: $color-font;
+}
+
+
+.form-label {
+    color: $color-font;
+}
+
+
+
+.form-control {
+    background-color: $color-primary;
+    border-color: $color-font;
+    color: $color-primary;
+
+    &:active,
+    &:disabled {
+        color: $color-primary;
+        background-color: $color-font;
+        border-color: $color-font;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $color-shadow;
+    }
+
+    &:focus {
+        border-color: $color-font;
+        background-color: $color-primary;
+        color: $color-font;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $color-shadow;
+    }
+
+
+    &:hover {
+        color: $color-font;
+        border-color: $color-font;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $color-shadow;
+    }
+}
+
+::placeholder {
+    color: $color-font !important;
+}
+
+.modal-content {
+    .form-control {
+        background-color: $color-primary-light;
+        border-color: $color-font;
+        color: $color-primary;
+
+        &:focus {
+            background-color: $color-font;
+            border-color: $color-font;
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px $color-shadow;
+        }
+    }
+}
+
+
+.form-text {
+    color: $color-font;
+}
+
+
+.btn-secondary {
+    color: $color-font;
+    border-color: $color-font;
+    background-color: $color-primary-light;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+        color: $color-primary !important;
+        background-color: $color-font;
+        border-color: $color-font;
+
+    }
+}
+
+.btn-primary {
+    color: $color-font;
+    background-color: $color-secondary;
+    border-color: $color-tertiary;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+        color: $color-primary;
+        background-color: $color-font !important;
+        border-color: $color-font;
+
+    }
+}
+
+.btn {
+    a {
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:disabled {
+            color: $color-primary !important;
+            background-color: $color-font;
+            border-color: $color-font;
+        }
+    }
+}
+
+
+#myCarousel1 {
+    .carousel-item {
+        display: block;
+    }
+}
+
+
+.carousel-item {
+    img {
+        max-height: 500px;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.5;
+        overflow: hidden;
+    }
+}
+
+.carousel-caption,
+.border-bottom,
+.border-top,
+h3 {
+    color: $color-font !important;
+    border-color: $color-font !important;
+}
+
+.feature {
+    p {
+        color: $color-font !important;
+    }
+}
+
+
+h2,
+.col-lg-4 {
+    text-align: center;
+
+    p {
+        color: $color-font !important;
+    }
+}
+
+.my-4 {
+    h2 {
+        color: $color-font;
+        text-align: left;
+    }
+}
+
+
+.text-bg-primary {
+    color: $color-font !important;
+    background-color: $color-primary !important;
+}
+
+.bg-gradient {
+    background-image: none !important;
+}
+
+#featured-3 {
+    margin-top: 3rem;
+}
+
+.fw-normal {
+    color: $color-shadow
+}
+
+
+.border {
+    border-color: #d9a406 !important;
+    border-width: 1px !important;
+}
+
+
+.marketing {
+    margin-top: 2rem !important;
+}
+
+.nav {
+    --bs-nav-link-color: $color-font !important;
+    --bs-nav-link-hover-color: $color-font !important;
+    --bs-nav-link-disabled-color: $color-font !important;
+}
+
+
+.nav-link.active {
+    color: $color-shadow !important;
+}
+
+
+a {
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+        color: $color-font !important;
+        text-decoration: none !important;
+    }
+}
+
+.list-group {
+    max-width: 800px;
+    margin: 4rem 1rem;
+}
+
+.list-group-item {
+    color: $color-primary;
+    background-color: $color-font;
+}
+
+h6 {
+    p {
+        color: #695433;
+    }
+}
+
+.bg-light {
+    background-color: $color-primary !important;
+}
+
+.card {
+    border: 1px solid $color-primary-light;
+
+    img {
+        object-fit: cover;
+        opacity: 0.85;
+        height: 350px;
+        width: 100%;
+
+    }
+}
+
+.card-body {
+    background-color: $color-primary-light;
+    max-height: 200px;
+}
+
+.card-text {
+    color: $color-font;
+}
+
+.btn-group {
+    .btn {
+        color: $color-font;
+        border: 1px solid $color-font;
+    }
+}
+
+.text-muted {
+    color: $color-font !important;
+}
+
+// form {
+//     display: inline-block;
+// }
+
+.navbar {
+    padding: 0.75rem 0;
+}
+
+.navbar-dark {
+    background-color: $color-primary;
+}
+
+.navbar-toggler {
+    color: $color-font !important;
+    border: 1px solid $color-font;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.navbar-toggler-icon {
+    color: $color-font !important;
+
+}
+
+.rounded-circle {
+    height: 140px;
+    width: 140px;
+}
+
+
+#profile-pic {
+    img {
+        width: 250px;
+        height: 250px;
+        opacity: 1;
+    }
+}
+
+.featurette {
+    position: relative;
+
+    img {
+        opacity: 0.3;
+        max-height: 600px;
+
+    }
+
+    .carousel-caption {
+        position: absolute;
+        top: 20%;
+        max-height: 300px;
+        left: 0;
+        right: 0;
+
+    }
+}
